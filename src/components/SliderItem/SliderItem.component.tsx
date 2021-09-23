@@ -24,8 +24,8 @@ const SliderItem: React.FC<Props> = ({
   };
 
   return (
-    <div style={{ margin: "2rem 0" }}>
-      <h2 style={{ margin: "1rem 0 " }}> {title} </h2>
+    <div>
+      <h2> {title} </h2>
       <Slider {...settings}>{sliderItems}</Slider>
     </div>
   );

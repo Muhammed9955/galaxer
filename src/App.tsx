@@ -111,6 +111,7 @@ function App() {
           arrows={true}
           slidesToScroll={3}
         />
+        <br />
         <SliderItem
           title="MEET OUR BRAIN"
           sliderItems={ourBrainArr}
@@ -120,6 +121,7 @@ function App() {
           arrows={true}
           slidesToScroll={1}
         />
+        <br />
         <div className="cooltext3">
           <hr />
           <img src={cooltext3} alt="cooltext3" />
