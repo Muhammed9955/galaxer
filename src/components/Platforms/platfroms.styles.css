@@ -3,7 +3,30 @@
   object-fit: contain;
 }
 .platfroms_imgs {
-  display: flex;
   flex-wrap: wrap;
+  display: flex;
   margin: 3rem 0;
+}
+.cooltext1 {
+  width: 1217px;
+}
+.cooltext2 {
+  width: 100%;
+}
+.platfroms_imgs img {
+  width: 25%;
+}
+@media screen and (max-width: 1350px) {
+  .cooltext1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .platfroms_imgs {
+    flex-direction: column;
+  }
+  .platfroms_imgs img {
+    width: 100%;
+    height: 100%;
+  }
 }

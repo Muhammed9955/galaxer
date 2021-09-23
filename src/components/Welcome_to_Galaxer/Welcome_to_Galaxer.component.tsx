@@ -1,8 +1,9 @@
+import "./styles.css";
 interface Props {}
 
 const Welcome: React.FC<Props> = () => {
   return (
-    <div style={{ textAlign: "left", width: "50vw" }}>
+    <div className="welcome-msg">
       <h1>Welcome_to_Galaxer</h1>
       <p>
         Galaxer is a modern open world game based on Ethereum network that

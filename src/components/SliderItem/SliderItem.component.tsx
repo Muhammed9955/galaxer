@@ -4,6 +4,7 @@ interface Props {
   sliderItems?: any;
   slidesToShow: number;
   slidesToScroll: number;
+  arrows?: boolean;
 }
 
 const SliderItem: React.FC<Props> = ({
@@ -11,6 +12,7 @@ const SliderItem: React.FC<Props> = ({
   sliderItems,
   slidesToShow,
   slidesToScroll,
+  arrows,
 }) => {
   const settings = {
     dots: true,
@@ -18,11 +20,12 @@ const SliderItem: React.FC<Props> = ({
     speed: 500,
     slidesToShow,
     slidesToScroll,
+    arrows,
   };
 
   return (
     <div>
-      <h2> {title} </h2>
+      <h2 style={{ margin: "0 " }}> {title} </h2>
       <Slider {...settings}>{sliderItems}</Slider>
     </div>
   );

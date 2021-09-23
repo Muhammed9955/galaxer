@@ -13,10 +13,32 @@ import SliderItem from "./components/SliderItem/SliderItem.component";
 import screenshot1 from "./images/screenshot1.png";
 import char1 from "./images/char1.png";
 import SliderCard from "./components/SliderCard/SliderCard.component";
+import MenuAnimation from "./components/MenuAnimation/MenuAnimation";
 // import "~slick-carousel/slick/slick.css";
 // import "~slick-carousel/slick/slick-theme.css";
 
 function App() {
+  const BannerItems = Array(3)
+    .fill(3)
+    .map((i, n) => (
+      <div className="BannerItems_style" key={n}>
+        <div className="banner-details">
+          <div className="banner-inner-head">
+            <div className="banner-num">02</div>
+            <h2>
+              NFT stuff <br />
+              In/out Game staking
+            </h2>
+          </div>
+          <p>
+            only taken address:
+            <br />
+            0x54sd65sa68fasd4adsadad5646asd
+          </p>
+          <button>Read Whitepaper</button>
+        </div>
+      </div>
+    ));
   const INGAME_SCREENSHOTSArr = Array(30)
     .fill(30)
     .map((i, n) => (
@@ -30,7 +52,7 @@ function App() {
   const ourBrainArr = Array(30)
     .fill(30)
     .map((i, n) => (
-      <div>
+      <div style={{ position: "absolute", width: "100vw" }}>
         <img
           key={n}
           src={char1}
@@ -46,6 +68,13 @@ function App() {
   return (
     <div style={{ background: "black" }}>
       <Nav />
+      <SliderItem
+        title=""
+        sliderItems={BannerItems}
+        slidesToShow={1}
+        slidesToScroll={1}
+        arrows={false}
+      />
 
       <div className="cards_contianer">
         {cardsArr.map((i) => (
@@ -61,6 +90,7 @@ function App() {
           sliderItems={sliderCards}
           slidesToShow={3}
           slidesToScroll={3}
+          arrows={true}
         />
         {/* </div> */}
         <div className="">
@@ -74,13 +104,17 @@ function App() {
           title="IN-GAME EXPERIENCE SCREENSHOTS"
           sliderItems={INGAME_SCREENSHOTSArr}
           slidesToShow={4}
+          arrows={true}
           slidesToScroll={4}
         />
         <SliderItem
           title="MEET OUR BRAIN"
           sliderItems={ourBrainArr}
-          slidesToShow={4}
-          slidesToScroll={4}
+          slidesToShow={
+            window.innerWidth > 1500 ? 4 : window.innerWidth > 1200 ? 3 : 2
+          }
+          arrows={true}
+          slidesToScroll={1}
         />
         <div className="cooltext3">
           <hr />
@@ -89,7 +123,6 @@ function App() {
         </div>
         <div className="bottom_icons">
           <AiOutlineTwitter className="bottom_icon" />
-
           <FaTelegramPlane className="bottom_icon" />
         </div>
       </div>

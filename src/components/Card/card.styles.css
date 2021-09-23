@@ -1,11 +1,13 @@
 .card {
-  width: 300px;
+  width: 320px;
   background-color: rgb(161, 68, 51);
   border: 2px solid white;
   text-align: start;
-  padding: 1rem 2rem;
+  padding-right: 15px;
+  padding-left: 15px;
   border-radius: 1rem;
-  margin-right: 2rem;
+  margin: 0 10px;
+  box-sizing: border-box;
   margin-top: 3rem;
 }
 .card_icon {
@@ -19,4 +21,25 @@
 }
 .card_p {
   margin: 5px 0;
+}
+@media screen and (max-width: 1200px) {
+  .card {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .card {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 520px;
+    margin: 2vh auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card {
+    width: 90%;
+  }
 }
