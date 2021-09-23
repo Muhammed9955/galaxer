@@ -1,0 +1,11 @@
+.footer {
+  background-color: rgb(44, 44, 44);
+  padding: 3rem;
+}
+.footer_body {
+  width: 80vw;
+  margin: auto;
+}
+.footer_hr {
+  opacity: 0.2;
+}

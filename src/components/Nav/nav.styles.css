@@ -1,0 +1,30 @@
+.nav {
+  position: fixed;
+  padding: 10px;
+  height: 10vh;
+  z-index: 999;
+  width: 100%;
+}
+.nav_body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.nav_items {
+  display: flex;
+  justify-content: space-between;
+}
+.logo_token {
+  height: 60px;
+}
+.nav_item {
+  margin-right: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid blue;
+}
+.nav_scroll {
+  background-color: #212529;
+  height: 10vh;
+}

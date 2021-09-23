@@ -1,0 +1,9 @@
+.platfroms_img {
+  height: 150px;
+  object-fit: contain;
+}
+.platfroms_imgs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
