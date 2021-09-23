@@ -1,11 +1,11 @@
 .card {
   width: 320px;
-  background-color: rgb(161, 68, 51);
-  border: 2px solid white;
+  /* background-color: rgb(161, 68, 51); */
+  background-color: black;
+  /* border: 1px solid white; */
   text-align: start;
-  padding-right: 15px;
-  padding-left: 15px;
-  border-radius: 1rem;
+  padding: 2rem;
+  /* border-radius: 1rem; */
   margin: 0 10px;
   box-sizing: border-box;
   margin-top: 3rem;

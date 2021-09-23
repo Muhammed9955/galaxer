@@ -75,12 +75,12 @@ function App() {
         slidesToScroll={1}
         arrows={false}
       />
-
       <div className="cards_contianer">
         {cardsArr.map((i) => (
           <Card title={i.title} pArr={i.pArr} Icon={i.icon} />
         ))}
       </div>
+
       <div className="App">
         <Welcome />
         <Platfroms />
@@ -88,7 +88,9 @@ function App() {
         <SliderItem
           title=""
           sliderItems={sliderCards}
-          slidesToShow={3}
+          slidesToShow={
+            window.innerWidth > 1500 ? 3 : window.innerWidth > 1200 ? 2 : 1
+          }
           slidesToScroll={3}
           arrows={true}
         />
@@ -103,15 +105,17 @@ function App() {
         <SliderItem
           title="IN-GAME EXPERIENCE SCREENSHOTS"
           sliderItems={INGAME_SCREENSHOTSArr}
-          slidesToShow={4}
+          slidesToShow={
+            window.innerWidth > 1500 ? 3 : window.innerWidth > 1200 ? 2 : 1
+          }
           arrows={true}
-          slidesToScroll={4}
+          slidesToScroll={3}
         />
         <SliderItem
           title="MEET OUR BRAIN"
           sliderItems={ourBrainArr}
           slidesToShow={
-            window.innerWidth > 1500 ? 4 : window.innerWidth > 1200 ? 3 : 2
+            window.innerWidth > 1500 ? 4 : window.innerWidth > 1200 ? 3 : 1
           }
           arrows={true}
           slidesToScroll={1}

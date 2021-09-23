@@ -28,7 +28,9 @@ const Welcome: React.FC<Props> = () => {
       </p>
       <p>Token adress :</p>
       <p>0x75d0fb8db2f6485fdfe6ff58321e91effae759a8</p>
-      <p>Read more</p>
+      <p className="uni_btn" style={{ width: "100px" }}>
+        Read more
+      </p>
     </div>
   );
 };

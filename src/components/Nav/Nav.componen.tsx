@@ -23,22 +23,27 @@ const Nav: React.FC<Props> = () => {
 
   return (
     <div className={`nav ${show && "nav_scroll"}`}>
-      <MenuAnimation setOpen={setOpen} open={open} />
-      <img src={logo_token} alt="logo_token" className="logo_token" />
-      <div className="nav_body">
-        <div className="nav_items">
+      <div className="nav_larg">
+        <img src={logo_token} alt="logo_token" className="logo_token" />
+        <div className="nav_body">
+          <div className="nav_items">
+            <p className="nav_item">Home</p>
+            <p className="nav_item">marketPlace</p>
+            <p className="nav_item">white paper</p>
+            <p className="nav_item">play now </p>
+          </div>
+        </div>
+      </div>
+      <div className="nav_mob">
+        <img src={logo_token} alt="logo_token" className="logo_token" />
+        <div className={open ? "slide-menu active" : "slide-menu"}>
           <p className="nav_item">Home</p>
           <p className="nav_item">marketPlace</p>
           <p className="nav_item">white paper</p>
           <p className="nav_item">play now </p>
         </div>
       </div>
-      <div className={open ? "slide-menu active" : "slide-menu"}>
-        <p className="nav_item">Home</p>
-        <p className="nav_item">marketPlace</p>
-        <p className="nav_item">white paper</p>
-        <p className="nav_item">play now </p>
-      </div>
+      <MenuAnimation setOpen={setOpen} open={open} />
     </div>
   );
 };

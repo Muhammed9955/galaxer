@@ -27,19 +27,20 @@
   padding: 1rem 0;
 }
 .inGame_screenShots__item {
-  width: 300px;
+  width: 200px;
   height: auto;
   object-fit: contain;
   margin-right: 1rem;
 }
 .ourbrain_screenShots__item {
-  width: 335px;
+  width: 300px;
   height: auto;
   object-fit: contain;
 }
 .slick-slide {
 }
 
+/* banner */
 .BannerItems_style {
   background-image: url(/src/images/bannerImg.jpg);
   background-size: cover;
@@ -50,9 +51,12 @@
   display: flex !important;
   justify-content: center;
   align-items: center;
+  /* margin: 0; */
 }
 .banner-details {
   width: 50%;
+  padding-left: 2rem;
+  padding-top: 1rem;
 }
 .banner-details h2 {
   font-size: 48px;
@@ -88,8 +92,8 @@
 
 .banner-details .banner-inner-head .banner-num {
   position: absolute;
-  margin-top: -17px;
-  margin-left: -18px;
+  margin-top: -10px;
+  margin-left: -20px;
   font-size: 15px;
   font-weight: 600;
 }
@@ -97,20 +101,20 @@
   content: "";
   position: absolute;
   margin-top: -20px;
-  margin-left: -25px;
+  margin-left: -30px;
   background: #090611;
   width: 205px;
-  height: 90px;
+  height: 100px;
   opacity: 0.7;
 }
 .slick-slide .banner-details {
-  transform: translateX(-30%);
+  /* transform: translateX(-30%); */
   transition: all 0.5s;
   transition-delay: 0.5s;
 }
 .slick-current .banner-details {
   overflow: hidden;
-  transform: translateX(0);
+  /* transform: translateX(0); */
 }
 
 @media screen and (max-width: 990px) {
@@ -126,7 +130,7 @@
     width: 510px;
   }
   .ourbrain_screenShots__item {
-    width: 280px;
+    width: 300px;
   }
 }
 @media screen and (max-width: 576px) {

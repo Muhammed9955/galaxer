@@ -1,6 +1,7 @@
 .welcome-msg {
   width: 500px;
   text-align: left;
+  padding: 2rem 0;
 }
 @media screen and (max-width: 1200px) {
   .welcome-msg {
